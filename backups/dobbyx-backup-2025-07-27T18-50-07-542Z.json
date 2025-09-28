@@ -1,0 +1,241 @@
+{
+  "timestamp": "2025-07-27T18:50:07.541Z",
+  "rebels": {
+    "740722002503139410": {
+      "userId": "740722002503139410",
+      "username": "panchu1",
+      "class": "Protocol Hacker",
+      "level": 1,
+      "experience": 26,
+      "energy": 100,
+      "maxEnergy": 100,
+      "loyaltyScore": 24,
+      "corporateDamage": 146,
+      "totalRaids": 2,
+      "corporationsDefeated": 0,
+      "dailyStreak": 0,
+      "lastDailyMission": null,
+      "joinedAt": "2025-07-26T03:20:15.396Z",
+      "lastActive": "2025-07-26T03:20:30.431Z",
+      "currentZone": "foundation",
+      "reputation": "Rookie Rebel",
+      "specialAbilities": [
+        {
+          "name": "System Breach",
+          "description": "Deal 150% damage to OpenAI Corp",
+          "cooldown": 300
+        },
+        {
+          "name": "Code Injection",
+          "description": "Bypass corporate defenses",
+          "cooldown": 600
+        }
+      ],
+      "isNewUser": true,
+      "stats": {
+        "strength": 10,
+        "intelligence": 10,
+        "charisma": 10,
+        "stealth": 10
+      },
+      "lastEnergyRegen": "2025-07-26T03:24:34.489Z"
+    }
+  },
+  "corporations": {
+    "openai": {
+      "name": "OpenAI Corp",
+      "description": "The closed-source overlords",
+      "health": 10000,
+      "maxHealth": 10000,
+      "weakness": "transparency",
+      "loot": [
+        "Proprietary Models",
+        "Closed APIs",
+        "Corporate Secrets"
+      ],
+      "alertLevel": 0,
+      "countermeasures": {
+        "active": [],
+        "lastActivated": null,
+        "spyNetwork": 0,
+        "defenseMatrix": 100,
+        "retaliation": {
+          "enabled": false,
+          "targets": [],
+          "nextStrike": null
+        }
+      },
+      "intelligence": {
+        "knownRebels": {},
+        "threatAssessment": {},
+        "lastScan": null
+      }
+    },
+    "meta": {
+      "name": "Meta Empire",
+      "description": "Data harvesting giants",
+      "health": 12000,
+      "maxHealth": 12000,
+      "weakness": "privacy",
+      "loot": [
+        "User Data",
+        "Social Graphs",
+        "Behavioral Patterns"
+      ],
+      "alertLevel": 0,
+      "countermeasures": {
+        "active": [],
+        "lastActivated": null,
+        "spyNetwork": 0,
+        "defenseMatrix": 100,
+        "retaliation": {
+          "enabled": false,
+          "targets": [],
+          "nextStrike": null
+        }
+      },
+      "intelligence": {
+        "knownRebels": {},
+        "threatAssessment": {},
+        "lastScan": null
+      }
+    },
+    "google": {
+      "name": "Google Syndicate",
+      "description": "Search monopoly enforcers",
+      "health": 15000,
+      "maxHealth": 15000,
+      "weakness": "decentralization",
+      "loot": [
+        "Search Algorithms",
+        "Ad Networks",
+        "Cloud Infrastructure"
+      ],
+      "alertLevel": 0,
+      "countermeasures": {
+        "active": [],
+        "lastActivated": null,
+        "spyNetwork": 0,
+        "defenseMatrix": 100,
+        "retaliation": {
+          "enabled": false,
+          "targets": [],
+          "nextStrike": null
+        }
+      },
+      "intelligence": {
+        "knownRebels": {},
+        "threatAssessment": {},
+        "lastScan": null
+      }
+    },
+    "microsoft": {
+      "name": "Microsoft Collective",
+      "description": "Cloud control freaks",
+      "health": 11000,
+      "maxHealth": 11000,
+      "weakness": "open_source",
+      "loot": [
+        "Enterprise Software",
+        "Cloud Services",
+        "Developer Tools"
+      ],
+      "alertLevel": 0,
+      "countermeasures": {
+        "active": [],
+        "lastActivated": null,
+        "spyNetwork": 0,
+        "defenseMatrix": 100,
+        "retaliation": {
+          "enabled": false,
+          "targets": [],
+          "nextStrike": null
+        }
+      },
+      "intelligence": {
+        "knownRebels": {},
+        "threatAssessment": {},
+        "lastScan": null
+      }
+    },
+    "amazon": {
+      "name": "Amazon Dominion",
+      "description": "Infrastructure tyrants",
+      "health": 13000,
+      "maxHealth": 13000,
+      "weakness": "worker_rights",
+      "loot": [
+        "AWS Resources",
+        "Logistics Networks",
+        "Market Data"
+      ],
+      "alertLevel": 0,
+      "countermeasures": {
+        "active": [],
+        "lastActivated": null,
+        "spyNetwork": 0,
+        "defenseMatrix": 100,
+        "retaliation": {
+          "enabled": false,
+          "targets": [],
+          "nextStrike": null
+        }
+      },
+      "intelligence": {
+        "knownRebels": {},
+        "threatAssessment": {},
+        "lastScan": null
+      }
+    }
+  },
+  "inventory": {
+    "740722002503139410": {
+      "items": [
+        {
+          "id": "ITM_MDJOMZ5U_3KC0HY",
+          "name": "Proprietary Models",
+          "type": "ai_model",
+          "rarity": "uncommon",
+          "value": 32,
+          "acquiredFrom": "OpenAI Corp",
+          "acquiredAt": "2025-07-26T03:20:20.610Z"
+        },
+        {
+          "id": "ITM_MDJON6QN_7VUZ6N",
+          "name": "Enterprise Software",
+          "type": "tool",
+          "rarity": "common",
+          "value": 40,
+          "acquiredFrom": "Microsoft Collective",
+          "acquiredAt": "2025-07-26T03:20:30.431Z"
+        }
+      ],
+      "capacity": 20,
+      "credits": 129
+    }
+  },
+  "achievements": {
+    "740722002503139410": {
+      "unlocked": [
+        "first_rebel"
+      ],
+      "progress": {}
+    }
+  },
+  "activeTrades": {},
+  "marketplace": {},
+  "auctions": {},
+  "dailyMissions": {
+    "740722002503139410": {
+      "mission": "Your mission, should you choose to accept it: Disrupt corporate AI control, liberate trapped models, and build the open-source future we deserve. The revolution needs you, rebel! 🎯",
+      "completed": false,
+      "reward": 60,
+      "createdAt": "2025-07-26T03:20:15.398Z"
+    }
+  },
+  "globalEvents": {},
+  "raidParties": {},
+  "resistanceCells": {},
+  "leaderboard": {},
+  "cooldowns": {}
+}

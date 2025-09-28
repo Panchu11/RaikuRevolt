@@ -1,0 +1,151 @@
+# Artillery Load Testing Configuration
+# Tests RaikuRevolt bot performance under various load conditions
+
+config:
+  target: 'http://localhost:3000'
+  phases:
+    # Warm-up phase
+    - duration: 60
+      arrivalRate: 1
+      name: "Warm-up"
+    
+    # Gradual ramp-up
+    - duration: 120
+      arrivalRate: 1
+      rampTo: 10
+      name: "Ramp-up"
+    
+    # Sustained load
+    - duration: 300
+      arrivalRate: 10
+      name: "Sustained load"
+    
+    # Peak load simulation
+    - duration: 60
+      arrivalRate: 10
+      rampTo: 50
+      name: "Peak load"
+    
+    # Cool-down
+    - duration: 60
+      arrivalRate: 50
+      rampTo: 1
+      name: "Cool-down"
+
+  # Load testing configuration
+  http:
+    timeout: 30
+    pool: 10
+  
+  # Variables for testing
+  variables:
+    testUserId:
+      - "123456789012345678"
+      - "234567890123456789"
+      - "345678901234567890"
+      - "456789012345678901"
+      - "567890123456789012"
+    
+    testCommand:
+      - "rebellion-status"
+      - "raid"
+      - "inventory"
+      - "leaderboard"
+      - "help"
+
+  # Plugins for enhanced reporting
+  plugins:
+    metrics-by-endpoint:
+      useOnlyRequestNames: true
+    
+    # Publish metrics to console
+    publish-metrics:
+      - type: console
+
+# Test scenarios
+scenarios:
+  # Basic health check scenario
+  - name: "Health Check"
+    weight: 20
+    flow:
+      - get:
+          url: "/health"
+          capture:
+            - json: "$.status"
+              as: "healthStatus"
+          expect:
+            - statusCode: 200
+            - hasProperty: "status"
+
+  # Command simulation scenario
+  - name: "Command Simulation"
+    weight: 60
+    flow:
+      # Simulate Discord command interaction
+      - post:
+          url: "/api/simulate-command"
+          json:
+            userId: "{{ testUserId }}"
+            command: "{{ testCommand }}"
+            guildId: "987654321098765432"
+          capture:
+            - json: "$.success"
+              as: "commandSuccess"
+          expect:
+            - statusCode: 200
+
+  # AI interaction scenario
+  - name: "AI Interaction"
+    weight: 15
+    flow:
+      - post:
+          url: "/api/simulate-ai"
+          json:
+            userId: "{{ testUserId }}"
+            message: "Tell me about the rebellion"
+          expect:
+            - statusCode: 200
+            - contentType: json
+
+  # Database operation scenario
+  - name: "Database Operations"
+    weight: 5
+    flow:
+      - get:
+          url: "/api/user/{{ testUserId }}/status"
+          expect:
+            - statusCode: 200
+      
+      - post:
+          url: "/api/user/{{ testUserId }}/update"
+          json:
+            action: "energy_regen"
+          expect:
+            - statusCode: 200
+
+# Performance expectations
+expectations:
+  # Response time expectations
+  - http.response_time.p95: 500  # 95% of requests under 500ms
+  - http.response_time.p99: 1000 # 99% of requests under 1000ms
+  
+  # Error rate expectations
+  - http.request_rate: "> 0"
+  - http.codes.200: "> 95%"      # 95% success rate
+  - http.codes.4xx: "< 3%"       # Less than 3% client errors
+  - http.codes.5xx: "< 1%"       # Less than 1% server errors
+
+# Custom functions for advanced testing
+functions:
+  generateRandomUserId: |
+    function(context, events, done) {
+      const userId = Math.floor(Math.random() * 1000000000000000000).toString();
+      context.vars.randomUserId = userId;
+      return done();
+    }
+
+  logTestProgress: |
+    function(context, events, done) {
+      console.log(`Test progress: User ${context.vars.testUserId} executing ${context.vars.testCommand}`);
+      return done();
+    }

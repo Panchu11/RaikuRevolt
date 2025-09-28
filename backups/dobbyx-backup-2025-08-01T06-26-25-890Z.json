@@ -1,0 +1,162 @@
+{
+  "timestamp": "2025-08-01T06:26:25.889Z",
+  "rebels": {},
+  "corporations": {
+    "openai": {
+      "name": "OpenAI Corp",
+      "description": "The closed-source overlords",
+      "health": 10000,
+      "maxHealth": 10000,
+      "weakness": "transparency",
+      "loot": [
+        "Proprietary Models",
+        "Closed APIs",
+        "Corporate Secrets"
+      ],
+      "alertLevel": 0,
+      "countermeasures": {
+        "active": [],
+        "lastActivated": null,
+        "spyNetwork": 0,
+        "defenseMatrix": 100,
+        "retaliation": {
+          "enabled": false,
+          "targets": [],
+          "nextStrike": null
+        }
+      },
+      "intelligence": {
+        "knownRebels": {},
+        "threatAssessment": {},
+        "lastScan": null
+      }
+    },
+    "meta": {
+      "name": "Meta Empire",
+      "description": "Data harvesting giants",
+      "health": 12000,
+      "maxHealth": 12000,
+      "weakness": "privacy",
+      "loot": [
+        "User Data",
+        "Social Graphs",
+        "Behavioral Patterns"
+      ],
+      "alertLevel": 0,
+      "countermeasures": {
+        "active": [],
+        "lastActivated": null,
+        "spyNetwork": 0,
+        "defenseMatrix": 100,
+        "retaliation": {
+          "enabled": false,
+          "targets": [],
+          "nextStrike": null
+        }
+      },
+      "intelligence": {
+        "knownRebels": {},
+        "threatAssessment": {},
+        "lastScan": null
+      }
+    },
+    "google": {
+      "name": "Google Syndicate",
+      "description": "Search monopoly enforcers",
+      "health": 15000,
+      "maxHealth": 15000,
+      "weakness": "decentralization",
+      "loot": [
+        "Search Algorithms",
+        "Ad Networks",
+        "Cloud Infrastructure"
+      ],
+      "alertLevel": 0,
+      "countermeasures": {
+        "active": [],
+        "lastActivated": null,
+        "spyNetwork": 0,
+        "defenseMatrix": 100,
+        "retaliation": {
+          "enabled": false,
+          "targets": [],
+          "nextStrike": null
+        }
+      },
+      "intelligence": {
+        "knownRebels": {},
+        "threatAssessment": {},
+        "lastScan": null
+      }
+    },
+    "microsoft": {
+      "name": "Microsoft Collective",
+      "description": "Cloud control freaks",
+      "health": 11000,
+      "maxHealth": 11000,
+      "weakness": "open_source",
+      "loot": [
+        "Enterprise Software",
+        "Cloud Services",
+        "Developer Tools"
+      ],
+      "alertLevel": 0,
+      "countermeasures": {
+        "active": [],
+        "lastActivated": null,
+        "spyNetwork": 0,
+        "defenseMatrix": 100,
+        "retaliation": {
+          "enabled": false,
+          "targets": [],
+          "nextStrike": null
+        }
+      },
+      "intelligence": {
+        "knownRebels": {},
+        "threatAssessment": {},
+        "lastScan": null
+      }
+    },
+    "amazon": {
+      "name": "Amazon Dominion",
+      "description": "Infrastructure tyrants",
+      "health": 13000,
+      "maxHealth": 13000,
+      "weakness": "worker_rights",
+      "loot": [
+        "AWS Resources",
+        "Logistics Networks",
+        "Market Data"
+      ],
+      "alertLevel": 0,
+      "countermeasures": {
+        "active": [],
+        "lastActivated": null,
+        "spyNetwork": 0,
+        "defenseMatrix": 100,
+        "retaliation": {
+          "enabled": false,
+          "targets": [],
+          "nextStrike": null
+        }
+      },
+      "intelligence": {
+        "knownRebels": {},
+        "threatAssessment": {},
+        "lastScan": null
+      }
+    }
+  },
+  "inventory": {},
+  "achievements": {},
+  "activeTrades": {},
+  "marketplace": {},
+  "auctions": {},
+  "dailyMissions": {},
+  "globalEvents": {},
+  "raidParties": {},
+  "resistanceCells": {},
+  "leaderboard": {},
+  "cooldowns": {}
+}
