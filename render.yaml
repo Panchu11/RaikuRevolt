@@ -18,5 +18,5 @@ services:
     # DISCORD_GUILD_ID - Your Discord guild/server ID
     # DATABASE_URL - Your Render PostgreSQL connection string
     # FIREWORKS_API_KEY - Your Fireworks AI API key
-    # RAI_MODEL_ID - accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
+    # DOBBY_MODEL_ID - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
     # ADMIN_USER_IDS - Discord user IDs for admin access (comma-separated)

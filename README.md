@@ -528,7 +528,7 @@ GUILD_ID=your_discord_server_id_here
 
 # Raiku AI Configuration
 FIREWORKS_API_KEY=your_fireworks_api_key_here
-RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
+DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
 
 # Optional Game Configuration
 NODE_ENV=production

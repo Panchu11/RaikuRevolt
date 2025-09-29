@@ -280,7 +280,7 @@ GUILD_ID=[DISCORD_SERVER_ID]
 
 # AI Configuration
 FIREWORKS_API_KEY=[SECURE_FIREWORKS_API_KEY]
-RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
+DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
 
 # Game Configuration
 NODE_ENV=production

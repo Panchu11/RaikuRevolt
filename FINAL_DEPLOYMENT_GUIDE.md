@@ -54,7 +54,7 @@ DATABASE_URL=postgresql://username:password@host:port/raikurevolt_revolt
 
 # AI Configuration
 FIREWORKS_API_KEY=your_fireworks_api_key_here
-RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
+DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
 
 # Admin Configuration
 ADMIN_USER_IDS=740722002503139410,another_admin_id
