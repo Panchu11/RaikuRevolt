@@ -2,7 +2,7 @@
 
 ## ❌ **The Problem**
 
-Your Discord bot's slash commands worked perfectly in your test server but didn't appear in Sentient's server after they forked and deployed the code.
+Your Discord bot's slash commands worked perfectly in your test server but didn't appear in the Raiku team's server after they forked and deployed the code.
 
 ## 🔍 **Root Cause Analysis**
 
@@ -13,7 +13,7 @@ Your Discord bot's slash commands worked perfectly in your test server but didn'
 
 ### 2. **What Went Wrong**
 - **You**: Ran `npm run deploy` locally → Commands registered globally ✅
-- **Sentient Team**: Only deployed the bot to Render → Commands NOT registered ❌
+- **Raiku Team**: Only deployed the bot to Render → Commands NOT registered ❌
 
 ### 3. **The GUILD_ID Red Herring**
 - `GUILD_ID` exists in environment files but is **NOT used for command registration**
@@ -44,9 +44,9 @@ startCommand: npm run deploy-commands && npm start
 }
 ```
 
-## ⚡ **Immediate Fix for Sentient Team**
+## ⚡ **Immediate Fix for Raiku Team**
 
-The Sentient team needs to **manually run the deployment script once**:
+The Raiku team needs to **manually run the deployment script once**:
 
 ```bash
 # Method 1: Run deployment script
@@ -115,11 +115,11 @@ async deployCommandsGlobally() {
 
 ### For Future Deployments:
 1. **Any server** that adds your bot will get slash commands automatically
-2. **No manual deployment** required from Sentient team or anyone else
+2. **No manual deployment** required from Raiku team or anyone else
 3. **Commands appear within 1-2 minutes** of bot startup
 
 ### For Current Deployment:
-- Sentient team should either:
+- Raiku team should either:
   - **Restart their Render deployment** (triggers auto-deploy), OR
   - **Run `npm run deploy-commands` manually** once
 

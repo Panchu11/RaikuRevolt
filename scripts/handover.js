@@ -2,7 +2,7 @@
 
 /**
  * RaikuRevolt Handover Script
- * Facilitates easy switching between development and Sentient team credentials
+ * Facilitates easy switching between development and Raiku team credentials
  * Helps with deployment preparation and environment setup
  */
 
@@ -52,14 +52,14 @@ class HandoverManager {
     async run() {
         this.log('\n🤖 RaikuRevolt Handover Manager', 'bright');
         this.log('================================', 'blue');
-        this.log('This tool helps prepare RaikuRevolt for handover to the Sentient team.\n', 'yellow');
+        this.log('This tool helps prepare RaikuRevolt for handover to the Raiku team.\n', 'yellow');
 
         try {
             const action = await this.selectAction();
             
             switch (action) {
                 case '1':
-                    await this.setupSentientEnvironment();
+                    await this.setupRaikuEnvironment();
                     break;
                 case '2':
                     await this.validateConfiguration();
@@ -86,7 +86,7 @@ class HandoverManager {
     // Select action menu
     async selectAction() {
         this.log('Select an action:', 'bright');
-        this.log('1. Setup Sentient Team Environment', 'green');
+        this.log('1. Setup Raiku Team Environment', 'green');
         this.log('2. Validate Current Configuration', 'green');
         this.log('3. Generate Deployment Package', 'green');
         this.log('4. Show Handover Checklist', 'green');
@@ -95,15 +95,15 @@ class HandoverManager {
         return await this.ask('\nEnter your choice (1-5): ');
     }
 
-    // Setup Sentient team environment
-    async setupSentientEnvironment() {
-        this.log('\n🔧 Setting up Sentient Team Environment', 'bright');
+    // Setup Raiku team environment
+    async setupRaikuEnvironment() {
+        this.log('\n🔧 Setting up Raiku Team Environment', 'bright');
         this.log('=========================================', 'blue');
 
-        const credentials = await this.collectSentientCredentials();
-        await this.createSentientEnvFile(credentials);
+        const credentials = await this.collectRaikuCredentials();
+        await this.createRaikuEnvFile(credentials);
         
-        this.log('\n✅ Sentient team environment file created!', 'green');
+        this.log('\n✅ Raiku team environment file created!', 'green');
         this.log('📁 File location: .env.raiku-production', 'cyan');
         this.log('\n📋 Next steps:', 'yellow');
         this.log('1. Review the generated .env.raiku-production file', 'white');
@@ -111,9 +111,9 @@ class HandoverManager {
         this.log('3. Deploy to PebbleHost with these credentials', 'white');
     }
 
-    // Collect Sentient team credentials
-    async collectSentientCredentials() {
-        this.log('\n📝 Please provide Sentient team credentials:', 'yellow');
+    // Collect Raiku team credentials
+    async collectRaikuCredentials() {
+        this.log('\n📝 Please provide Raiku team credentials:', 'yellow');
         
         const credentials = {};
         
@@ -141,9 +141,9 @@ class HandoverManager {
         return credentials;
     }
 
-    // Create Sentient environment file
-    async createSentientEnvFile(credentials) {
-        const envContent = `# RaikuRevolt Production Environment - Sentient Team
+    // Create Raiku environment file
+    async createRaikuEnvFile(credentials) {
+        const envContent = `# RaikuRevolt Production Environment - Raiku Team
 # Generated on ${new Date().toISOString()}
 
 # ===========================================
@@ -163,7 +163,7 @@ MONGODB_DATABASE=${credentials.MONGODB_DATABASE}
 # AI CONFIGURATION
 # ===========================================
 FIREWORKS_API_KEY=${credentials.FIREWORKS_API_KEY}
-DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
+RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
 
 # ===========================================
 # SERVER CONFIGURATION
@@ -298,10 +298,10 @@ ${credentials.SENTRY_DSN ? `SENTRY_DSN=${credentials.SENTRY_DSN}` : '# SENTRY_DS
 
         const checklist = [
             '🔧 Setup Phase',
-            '  □ Create Sentient team PebbleHost account',
-            '  □ Create Sentient team MongoDB Atlas cluster',
-            '  □ Create Sentient team Discord application',
-            '  □ Generate Sentient team environment configuration',
+            '  □ Create Raiku team PebbleHost account',
+            '  □ Create Raiku team MongoDB Atlas cluster',
+            '  □ Create Raiku team Discord application',
+            '  □ Generate Raiku team environment configuration',
             '',
             '🚀 Deployment Phase',
             '  □ Upload RaikuRevolt files to PebbleHost',

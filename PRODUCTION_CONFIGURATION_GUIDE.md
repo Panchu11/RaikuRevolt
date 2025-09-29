@@ -72,7 +72,7 @@ GUILD_ID=your_target_server_id_here
 
 # AI Configuration (REQUIRED)
 FIREWORKS_API_KEY=your_actual_fireworks_api_key
-DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
+RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
 
 # Database Configuration (PRODUCTION)
 DATABASE_URL=postgresql://username:password@host:port/raikurevolt_revolt

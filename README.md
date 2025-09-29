@@ -10,7 +10,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js)](https://nodejs.org)
 [![Lines of Code](https://img.shields.io/badge/Lines%20of%20Code-9500+-blue?style=for-the-badge&logo=github)](https://github.com/Panchu11/RaikuRevolt)
 
-## 🚀 **HANDOVER STATUS: READY FOR SENTIENT TEAM**
+## 🚀 **HANDOVER STATUS: READY FOR RAIKU TEAM**
 
 [![PostgreSQL Ready](https://img.shields.io/badge/PostgreSQL-Integration%20Complete-336791?style=flat-square&logo=postgresql)](https://www.postgresql.org)
 [![PebbleHost Ready](https://img.shields.io/badge/PebbleHost-Deployment%20Ready-FF6B35?style=flat-square)](https://pebblehost.com)
@@ -528,7 +528,7 @@ GUILD_ID=your_discord_server_id_here
 
 # Raiku AI Configuration
 FIREWORKS_API_KEY=your_fireworks_api_key_here
-DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
+RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
 
 # Optional Game Configuration
 NODE_ENV=production
@@ -596,10 +596,10 @@ RAID_COOLDOWN=300
 
 | Document | Purpose | Audience | Content |
 |----------|---------|----------|---------|
-| **[📋 Project Overview](./DOBBYX_PROJECT_OVERVIEW.md)** | Strategic Summary | Raiku Leadership | Vision, features, impact |
-| **[🔧 Technical Specifications](./DOBBYX_TECHNICAL_SPECIFICATIONS.md)** | Implementation Guide | Development Team | Architecture, systems, APIs |
-| **[🎮 Feature Showcase](./DOBBYX_FEATURE_SHOWCASE.md)** | User Experience Demo | Marketing & UX Teams | Interactions, examples, flows |
-| **[📊 Implementation Status](./DOBBYX_IMPLEMENTATION_STATUS.md)** | Development Report | Project Management | Status, metrics, readiness |
+| **[📋 Project Overview](./RAIKUREVOLT_PROJECT_OVERVIEW.md)** | Strategic Summary | Raiku Leadership | Vision, features, impact |
+| **[🔧 Technical Specifications](./RAIKUREVOLT_TECHNICAL_SPECIFICATIONS.md)** | Implementation Guide | Development Team | Architecture, systems, APIs |
+| **[🎮 Feature Showcase](./RAIKUREVOLT_FEATURE_SHOWCASE.md)** | User Experience Demo | Marketing & UX Teams | Interactions, examples, flows |
+| **[📊 Implementation Status](./RAIKUREVOLT_IMPLEMENTATION_STATUS.md)** | Development Report | Project Management | Status, metrics, readiness |
 
 </div>
 

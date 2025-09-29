@@ -53,7 +53,7 @@ FIREWORKS_API_KEY=your_fireworks_ai_api_key
 
 **Optional Variables:**
 ```bash
-DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
+RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
 NODE_ENV=production
 LOG_LEVEL=info
 MONITORING_PORT=10000
@@ -114,8 +114,8 @@ MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/raikurevolt?retr
 FIREWORKS_API_KEY=your_fireworks_api_key
 # Get from: https://fireworks.ai/account/api-keys
 
-DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
-# Sentient team's custom Dobby model
+RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
+# Raiku team's custom Rai model
 ```
 
 ### **Render.yaml Configuration**

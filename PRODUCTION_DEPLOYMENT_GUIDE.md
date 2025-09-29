@@ -90,7 +90,7 @@ DISCORD_CLIENT_ID=your_discord_client_id
 DISCORD_GUILD_ID=your_discord_server_id
 DATABASE_URL=your_postgresql_connection_string
 FIREWORKS_API_KEY=your_fireworks_api_key
-DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
+RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
 ADMIN_USER_IDS=your_admin_discord_user_ids
 
 # Production Configuration

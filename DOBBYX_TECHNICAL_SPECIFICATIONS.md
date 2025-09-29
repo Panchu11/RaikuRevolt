@@ -34,7 +34,7 @@ RaikuRevolt/
 ```javascript
 // Configuration
 API_ENDPOINT: https://api.fireworks.ai/inference/v1/chat/completions
-MODEL_ID: accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
+MODEL_ID: accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
 API_KEY: [SECURE_API_KEY_FROM_ENV]
 ```
 
@@ -280,7 +280,7 @@ GUILD_ID=[DISCORD_SERVER_ID]
 
 # AI Configuration
 FIREWORKS_API_KEY=[SECURE_FIREWORKS_API_KEY]
-DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
+RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
 
 # Game Configuration
 NODE_ENV=production

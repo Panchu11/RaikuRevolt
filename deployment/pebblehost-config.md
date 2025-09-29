@@ -35,7 +35,7 @@ DATABASE_URL=postgresql://username:password@host:port/raikurevolt
 
 # AI Configuration
 FIREWORKS_API_KEY=your_raiku_team_fireworks_key
-DOBBY_MODEL_ID=accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
+RAI_MODEL_ID=accounts/raikufoundation/models/rai-unhinged-llama-3-3-70b-new
 
 # Server Configuration
 NODE_ENV=production
@@ -198,14 +198,14 @@ mongodb+srv://username:password@cluster.mongodb.net/raikurevolt?retryWrites=true
 - [ ] Validate security settings
 
 #### **During Handover:**
-- [ ] Provide Sentient team with access credentials
+- [ ] Provide Raiku team with access credentials
 - [ ] Transfer PebbleHost account ownership
 - [ ] Transfer MongoDB Atlas project
 - [ ] Transfer Discord application ownership
 - [ ] Provide documentation and support
 
 #### **After Handover:**
-- [ ] Verify Sentient team can deploy
+- [ ] Verify Raiku team can deploy
 - [ ] Test all functionality in production
 - [ ] Monitor for issues
 - [ ] Provide ongoing support as needed
@@ -242,4 +242,4 @@ mongodb+srv://username:password@cluster.mongodb.net/raikurevolt?retryWrites=true
 
 ---
 
-**This configuration ensures a smooth deployment and easy handover to the Sentient team while maintaining all functionality and security standards.**
+**This configuration ensures a smooth deployment and easy handover to the Raiku team while maintaining all functionality and security standards.**
